@@ -57,4 +57,61 @@ This is a WordPress theme following the tutorial by Alecaddd.
 
 ### [Tutorial](https://www.youtube.com/watch?v=Sz0z-Gyp3nA&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
 
+## Lesson 4:
 
+- Fixed asset loading in functions.php:
+  - Changed ```get_stylesheet_uri()``` to ```get_template_directory_uri()```
+  - Fixed JS file handle from ```'customscript'``` to ```'customsjs'```
+
+- Enhanced header.php:
+  - Implemented conditional body classes:
+    - Replaced static ```<body>``` tag with dynamic WordPress body classes
+    - Added custom conditional logic using ```is_front_page()```:
+      ```php
+      if( is_front_page() ):
+          $alecaddd_classes = array( 'alecaddd-class', 'my-class' );
+      else:
+          $alecaddd_classes = array( 'not-alecaddd-class' );
+      endif;
+      ```
+    - Implementation details:
+      - Front page receives two custom classes: 'alecaddd-class' and 'my-class'
+      - Other pages receive 'not-alecaddd-class'
+      - Uses ```body_class($alecaddd_classes)``` to merge custom classes with WordPress defaults
+    
+    - Key functions used:
+      - ```is_front_page()```: WordPress conditional tag to check if current page is front page
+      - ```body_class()```: Core WordPress function that:
+        - Accepts array of custom classes as parameter
+        - Automatically adds WordPress default classes
+        - Outputs properly formatted class attribute
+    
+    - Benefits:
+      - Allows different styling for front page vs other pages
+      - Maintains WordPress standard body classes
+      - Makes theme more dynamic and maintainable
+      - Improved code organization with conditional logic
+
+- Improved index.php:
+  - Added WordPress loop structure:
+    - ```have_posts()```: Checks if there are posts to display
+    - ```the_post()```: Sets up each post's data
+    - Example structure:
+      ```php
+      if(have_posts()) :
+          while(have_posts()) : the_post();
+              // Post content here
+          endwhile;
+      endif;
+      ```
+  
+  - Added post information display using WordPress template tags:
+    - ```the_title()```: Displays the post title
+    - ```the_date()```: Shows the post's publication date
+    - ```the_time()```: Shows the post's publication time
+    - ```the_category()```: Lists the post's categories
+    - ```the_content()```: Displays the full post content
+    - ```the_excerpt()```: Shows a summary of the post
+  
+
+### [Tutorial](https://www.youtube.com/watch?v=pJ4NTBdvyj4&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)

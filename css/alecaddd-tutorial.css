@@ -1,7 +1,10 @@
-:root{
-  --text-color: #eee;
-  --bg-color: #333;
-  --font-family: sans-serif;
+:root {
+  --text-color: #d4d9d4;
+  --bg-color: #212a31;
+  --primary-color: #124e66;
+  --shadow-color: #2e3944;
+  --hover-color: #748d92;
+  --font-family: "Roboto", serif;
 }
 
 html,
@@ -10,10 +13,9 @@ body {
   padding: 0;
   color: var(--text-color);
   background-color: var(--bg-color);
-  font: var(--font-family);
+  font-family: var(--font-family);
 }
 
 body {
-  padding: 20px;
+  padding: 20px 100px;
 }
-

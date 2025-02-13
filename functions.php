@@ -2,8 +2,8 @@
 
 function alecaddd_tutorial_theme_enqueue() {
 
-  wp_enqueue_style( 'customstyle', get_stylesheet_uri() . '/css/alecaddd-tutorial.css', array(), '1.0.0' , 'all');
-  wp_enqueue_script( 'customscript', get_stylesheet_uri() . '/js/alecaddd-tutorial.js', array(), '1.0.0', true );
+  wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/alecaddd-tutorial.css', array(), '1.0.0' , 'all');
+  wp_enqueue_script( 'customsjs', get_template_directory_uri() . '/js/alecaddd-tutorial.js', array(), '1.0.0', true );
 
 }
 
