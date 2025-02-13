@@ -115,3 +115,13 @@ This is a WordPress theme following the tutorial by Alecaddd.
   
 
 ### [Tutorial](https://www.youtube.com/watch?v=pJ4NTBdvyj4&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Lesson 5:
+
+- Added page-notitle.php template that can be used in the backend to give a page a custom template.
+
+- ```the_time()``` function is used to display the post's publication time. It takes a format string as an argument.
+  - ```'F j, Y'```: Month Day, Year
+  - ```'H:i'```: Hour Minute
+
+### [Tutorial](https://www.youtube.com/watch?v=aUxDz7vXilQ&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
