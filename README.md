@@ -125,3 +125,18 @@ This is a WordPress theme following the tutorial by Alecaddd.
   - ```'H:i'```: Hour Minute
 
 ### [Tutorial](https://www.youtube.com/watch?v=aUxDz7vXilQ&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Lesson 6:
+
+- Added theme support for custom background and custom header. (i.e. ```add_theme_support( 'custom-background' );``` and ```add_theme_support( 'custom-header' );``` and ```add_theme_support( 'post-thumbnails' );``` in ```functions.php```)
+  - ```add_theme_support()``` can be declared in ```functions.php``` and does not have to be inside a custom function when using it in a theme. if used in a plugin, it has to be inside a custom function.
+  - ```add_theme_support( 'custom-background' );``` is used to add a custom background to the theme.
+  - ```add_theme_support( 'custom-header' );``` is used to add a custom header to the theme.
+  - ```add_theme_support( 'post-thumbnails' );``` is used to add a post thumbnail to the theme.
+
+- Added ```header_image()``` function to ```header.php``` to display the header image.
+  - Added ```get_custom_header()->width``` and ```get_custom_header()->height``` to ```header.php``` to display the header image width and height.
+
+- Added ```the_post_thumbnail()``` function to ```index.php``` to display the post thumbnail.
+
+### [Tutorial](https://www.youtube.com/watch?v=ghmdq1hEm14&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)

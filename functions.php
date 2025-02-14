@@ -18,6 +18,10 @@ function alecaddd_tutorial_setup() {
 
 add_action( 'after_setup_theme', 'alecaddd_tutorial_setup' );
 
-// **** Disable the block editor and use the classic editor for following the tutorial. ****
+add_theme_support( 'custom-background' );
+add_theme_support( 'custom-header' );
+add_theme_support( 'post-thumbnails' );
+
+// **** Disable the block editor and use the classic editor for following the tutorial.
 add_filter('use_block_editor_for_post', '__return_false', 10);
-// ****
+// **** End of the block editor disable.
