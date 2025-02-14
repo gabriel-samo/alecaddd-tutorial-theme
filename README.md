@@ -140,3 +140,9 @@ This is a WordPress theme following the tutorial by Alecaddd.
 - Added ```the_post_thumbnail()``` function to ```index.php``` to display the post thumbnail.
 
 ### [Tutorial](https://www.youtube.com/watch?v=ghmdq1hEm14&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Lesson 7:
+
+
+
+### [Tutorial](https://www.youtube.com/watch?v=ut5b0gSpV1w&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)

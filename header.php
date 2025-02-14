@@ -26,4 +26,4 @@
   <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 
   <!-- <img src="<?php  ?>" height="<?php  ?>" width="<?php  ?>" alt="">  -->
-  <img src="<?php header_image(); ?>" height="150px" width="<?php get_custom_header()->width; ?>" alt="" style="display: block; margin: 0 auto;"> 
+  <img src="<?php header_image(); ?>" width="<?php //get_custom_header()->width; ?>" alt="header image" id="header-image"> 
