@@ -162,3 +162,22 @@ This is a WordPress theme following the tutorial by Alecaddd.
 - Changed the navbar to a bootstrap navbar.
 
 ### [Tutorial](https://www.youtube.com/watch?v=OSYbTkzuyDg)
+
+## Lesson 8:
+
+- Added a sidebar to the theme.
+- Added ```register_sidebar()``` function to ```functions.php```.
+  - ```'name'``` argument is the name of the sidebar.
+  - ```'id'``` argument is the id of the sidebar.
+  - ```'description'``` argument is the description of the sidebar.
+  - ```'before_widget'``` argument is the HTML before the widget.
+  - ```'after_widget'``` argument is the HTML after the widget.
+  - ```'before_title'``` argument is the HTML before the title.
+  - ```'after_title'``` argument is the HTML after the title.
+- Added ```add_action('widgets_init', 'alecaddd_tutorial_widget_setup');``` to ```functions.php``` to initialize the sidebar.
+  - ```'widgets_init'``` is the action hook for registering widgets.
+- Added ```sidebar.php``` file to the theme.
+- Added ```get_sidebar()``` function to ```index.php``` to display the sidebar.
+
+
+### [Tutorial](https://www.youtube.com/watch?v=aSXitOevqA0&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
