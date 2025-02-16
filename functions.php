@@ -22,6 +22,8 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'custom-header' );
 add_theme_support( 'post-thumbnails' );
 
+add_theme_support('post-formats', array('aside', 'image', 'video'));
+
 // **** Disable the block editor and use the classic editor for following the tutorial.
 add_filter('use_block_editor_for_post', '__return_false', 10);
 // **** End of the block editor disable.

@@ -1,11 +1,11 @@
 :root {
-  --text-color: 212, 217, 212; /* #d4d9d4 */
-  --bg-color: 33, 42, 49; /* #212a31 */
-  --primary-color: 18, 78, 102; /* #124e66 */
-  --shadow-color: 46, 57, 68; /* #2e3944 */
-  --hover-color: 116, 141, 146; /* #748d92 */
+  --text-color: 221, 229, 218; /* #d4d9d4 */
+  --bg-color: 39, 39, 41; /* #272729 */
+  --primary-color: 46, 63, 106; /* #2e3f6a */
+  --shadow-color: 103, 65, 82; /* #674152 */
+  --hover-color: 222, 175, 121; /* #deaf79 */
   --font-family: "Roboto", serif;
-  --nav-padding: 2rem;
+  --nav-padding: 1rem;
 }
 
 html,

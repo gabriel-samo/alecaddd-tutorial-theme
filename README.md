@@ -143,6 +143,14 @@ This is a WordPress theme following the tutorial by Alecaddd.
 
 ## Lesson 7:
 
-
+- Added post formats to the theme.
+- Added ```add_theme_support( 'post-formats', array( 'aside', 'image', 'video' ) );``` to ```functions.php```.
+- Added ```get_post_format()``` function to ```index.php``` to get the post format.
+    - ```get_post_format()``` function returns the post format.
+- Added ```get_template_part( 'content', get_post_format() );``` to ```index.php``` to get the post format template.
+  - ```get_post_format()``` function returns the post format.
+  - ```get_template_part();``` function returns the post format template.
+  - ```get_post_format();``` function is used to get the post format. (returns empty string if no post format is found)
+- Added ```content.php```, ```content-aside.php```, ```content-image.php```, ```content-video.php``` files to the theme.
 
 ### [Tutorial](https://www.youtube.com/watch?v=ut5b0gSpV1w&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
