@@ -15,7 +15,6 @@ body {
   color: rgb(var(--text-color));
   background-color: rgb(var(--bg-color));
   font-family: var(--font-family);
-  
 }
 
 body {
@@ -72,7 +71,6 @@ body hr {
 .menu-item a:hover {
   color: rgb(var(--hover-color));
   text-decoration-color: rgba(var(--hover-color));
-
 }
 
 .menu-item a:active {

@@ -154,3 +154,10 @@ This is a WordPress theme following the tutorial by Alecaddd.
 - Added ```content.php```, ```content-aside.php```, ```content-image.php```, ```content-video.php``` files to the theme.
 
 ### [Tutorial](https://www.youtube.com/watch?v=ut5b0gSpV1w&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Live Session 1:
+
+- Added bootstrap to the theme.
+- When adding bootstrap to the theme, it is important to add the bootstrap CSS file before the theme's own CSS file.
+
+### [Tutorial](https://www.youtube.com/watch?v=OSYbTkzuyDg)
