@@ -159,5 +159,6 @@ This is a WordPress theme following the tutorial by Alecaddd.
 
 - Added bootstrap to the theme.
 - When adding bootstrap to the theme, it is important to add the bootstrap CSS file before the theme's own CSS file.
+- Changed the navbar to a bootstrap navbar.
 
 ### [Tutorial](https://www.youtube.com/watch?v=OSYbTkzuyDg)

@@ -12,7 +12,7 @@ function alecaddd_tutorial_theme_enqueue() {
 
   // JS (Your scripts need to be enqueued after every other scripts)
   wp_enqueue_script('jquery');
-  wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '5.3.3', true);
+  wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), '5.3.3', true);
   wp_enqueue_script('customsjs', get_template_directory_uri() . '/js/alecaddd-tutorial.js', array(), '1.0.0', true);
 }
 
