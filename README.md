@@ -181,3 +181,14 @@ This is a WordPress theme following the tutorial by Alecaddd.
 
 
 ### [Tutorial](https://www.youtube.com/watch?v=aSXitOevqA0&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Lesson 9:
+
+- WP_Query is a class that is used to query the database for posts.
+- Added ```new WP_Query()``` to ```index.php``` to query the database for posts.
+- Added ```$lastBlog``` variable to ```index.php``` to store the query results.
+- Added ```$lastBlog->have_posts()``` to ```index.php``` to check if there are posts to display.
+- Added ```$lastBlog->the_post()``` to ```index.php``` to display the posts.
+- Added ```wp_reset_postdata()``` to ```index.php``` to reset the post data.
+
+### [Tutorial](https://www.youtube.com/watch?v=GA--ROatgYM&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)

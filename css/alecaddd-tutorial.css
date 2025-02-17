@@ -26,7 +26,19 @@ body {
 body hr {
   border: 0;
   height: 5px;
-  background-color: rgb(var(--text-color));
+  margin: 2rem 0;
+  background-color: rgb(var(--hover-color));
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(var(--text-color));
+  transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+  color: rgb(var(--hover-color));
 }
 
 .menu-main-navigation-container {
@@ -46,12 +58,11 @@ body hr {
 
 #menu-main-navigation {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .menu-item {
   list-style: none;
-  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -74,7 +85,7 @@ body hr {
 
 #header-image {
   width: 100%;
-  height: 150px;
+  height: 5000px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -82,14 +93,25 @@ body hr {
 .post-title {
   margin: 0;
   padding: 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.post-title a {
+  color: rgb(var(--text-color));
+  text-decoration-color: rgba(var(--text-color), 0);
+  text-underline-offset: 0.5rem;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.post-title a:hover {
+  text-decoration-color: rgba(var(--text-color));
 }
 
 .thumbnail-img img {
   width: 100%;
-  height: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -119,29 +141,31 @@ body hr {
 }
 
 .post-content h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin: 0.75rem 0;
 }
 
 .post-content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin: 1rem 0;
+  margin: 0;
 }
 
 .post-content h2 > code, .post-content p > code {
   font-weight: 400;
-  background-color: rgb(var(--shadow-color));
+  background-color: rgb(var(--primary-color));
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem;
+  color: rgb(var(--text-color));
 }
 
 .post-content pre {
   font-size: 1rem;
-  background-color: rgb(var(--shadow-color));
+  background-color: rgb(var(--primary-color));
   border-radius: 0.5rem;
   padding: 0.75rem;
+  color: rgb(var(--text-color));
 }
 
 footer {

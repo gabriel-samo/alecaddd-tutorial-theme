@@ -13,15 +13,15 @@
 
 <?php
 
-if (is_front_page()):
-  $alecaddd_classes = array('alecaddd-class', 'my-class');
-else:
-  $alecaddd_classes = array('not-alecaddd-class');
-endif;
+// if (is_front_page()):
+//   $alecaddd_classes = array('alecaddd-class', 'my-class');
+// else:
+//   $alecaddd_classes = array('not-alecaddd-class');
+// endif;
 
 ?>
 
-<body <?php body_class($alecaddd_classes); ?>>
+<body <?php //body_class($alecaddd_classes); ?>>
 
   <div class="container">
     <div class="row">
@@ -29,7 +29,7 @@ endif;
 
         <nav class="navbar navbar-expand-lg rounded-3 menu-main-navigation-container">
           <div class="container-fluid">
-            <a class="navbar-brand text-white" href="<?php echo home_url(); ?>">Alecaddd Tutorial Theme</a>
+            <a class="navbar-brand nav-logo" href="<?php echo home_url(); ?>">Alecaddd Tutorial Theme</a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,6 +38,7 @@ endif;
                 'theme_location' => 'primary',
                 'container' => false,
                 'menu_class' => 'nav navbar-nav navbar-right',
+                'active_class' => 'active'
               )); ?>
             </div>
           </div>
