@@ -192,3 +192,14 @@ This is a WordPress theme following the tutorial by Alecaddd.
 - Added ```wp_reset_postdata()``` to ```index.php``` to reset the post data.
 
 ### [Tutorial](https://www.youtube.com/watch?v=GA--ROatgYM&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Lesson 10:
+
+- Added a featured post to the theme.
+- Added ```conent-featured.php``` file to the theme to display the featured post.
+- Added ```get_categories()``` function to ```page-home.php``` to get the categories.
+  - With this we can get only the last post from each category.
+- Added ```foreach``` loop to ```page-home.php``` to display the categories.
+- Added ```get_template_part('content', 'featured');``` to ```page-home.php``` to display the featured post.
+
+### [Tutorial](https://www.youtube.com/watch?v=e8nJMopiH2Q&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
