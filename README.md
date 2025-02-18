@@ -203,3 +203,19 @@ This is a WordPress theme following the tutorial by Alecaddd.
 - Added ```get_template_part('content', 'featured');``` to ```page-home.php``` to display the featured post.
 
 ### [Tutorial](https://www.youtube.com/watch?v=e8nJMopiH2Q&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Live Session 2:
+
+- Styled the blog posts page and added a carousel to the home page.
+- In ```page-home.php``` we added and edited the carousel from bootstrap.
+  - We got the specific categories we wanted to display in the carousel with the ```$args_cat``` variable and passed it to the ```get_categories()```.
+  - We initialized the ```$count``` variable to 0 and the ```$indicators``` variable to an empty string.
+  - We used a foreach loop to iterate through the categories and get the last post from each category.
+- In ```index.php``` we added the ```get_template_part('content', 'blog');``` to display the blog posts.
+  - We added the third parameter $args to the ```get_template_part()``` function to pass the ```$column``` and ```$class``` variables to the ```content-blog.php``` file.
+- In ```content-blog.php``` we added the ```$args['column']``` and ```$args['class']``` variables to the ```<div>``` tag to pass the ```$column``` and ```$class``` variables to the ```content-blog.php``` file.
+
+
+### [Tutorial](https://www.youtube.com/watch?v=0UzwBRLfsbM)
+
+

@@ -8,7 +8,7 @@
 
 <div class="row pt-5">
 
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-12 col-sm-8">
 
     <?php
     if (have_posts()):
@@ -25,7 +25,7 @@
 
   </div>  
 
-  <div class="col-xs-12 col-sm-4">
+  <div class="col-12 col-sm-4">
 
     <?php get_sidebar(); ?>
     

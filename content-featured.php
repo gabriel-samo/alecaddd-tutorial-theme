@@ -8,4 +8,6 @@
 
   <?php the_title(sprintf('<h3 class="entry-title"><a href="%s">', esc_url(get_permalink())), '</a></h3>'); ?>
 
+  <small> <?php the_category(' '); ?> </small>
+
 </article>

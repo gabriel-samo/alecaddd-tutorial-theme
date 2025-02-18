@@ -2,46 +2,74 @@
 
 <div class="row pt-5">
 
-  <?php
+  <div id="alecaddd-carousel" class="carousel carousel-dark slide">
 
-    $args_cat = array(
-      'include' => '10, 11, 12',
-    );
+    <div class="carousel-inner">
 
-    $categories = get_categories($args_cat); 
-    foreach ($categories as $category):
+      <?php
 
-      $args = array(
-        'type' => 'post',
-        'posts_per_page' => 1,
-        'category__in' => $category->term_id,
-        'category__not_in' => array( 1 ),
+      $args_cat = array(
+        'include' => '10, 11, 12',
       );
-      
-      $lastBlog = new WP_Query($args);
-      if ($lastBlog->have_posts()):
-  
-        while ($lastBlog->have_posts()): $lastBlog->the_post(); ?>
-  
-          <div class="col-xs-12 col-sm-4">
-  
-            <?php get_template_part('content', 'featured'); ?>
-  
-          </div>
-  
-        <?php endwhile;
-  
-      endif;
-  
-      wp_reset_postdata();
 
-    endforeach;
+      $count = 0;
+      $indicators = '';
 
-  ?>
+      $categories = get_categories($args_cat);
+      foreach ($categories as $category):
 
+        $args = array(
+          'type' => 'post',
+          'posts_per_page' => 1,
+          'category__in' => $category->term_id,
+          'category__not_in' => array(1),
+        );
+
+        $lastBlog = new WP_Query($args);
+
+        if ($lastBlog->have_posts()):
+
+          while ($lastBlog->have_posts()): $lastBlog->the_post(); ?>
+
+            <div class="carousel-item <?php echo ($count === 0) ? 'active' : ''; ?>" data-bs-interval="10000">
+              <div class="carousel-img"><?php the_post_thumbnail('full'); ?></div>
+              <div class="carousel-caption d-none d-md-block carousel-caption-text">
+                <?php the_title(sprintf('<h3 class="entry-title"><a href="%s">', esc_url(get_permalink())), '</a></h3>'); ?>
+                <small> <?php the_category(' '); ?> </small>
+              </div>
+            </div>
+
+            <?php $indicators .= '<button type="button" data-bs-target="#alecaddd-carousel" data-bs-slide-to="' . $count . '" class="' . ($count === 0 ? 'active' : '') . '" aria-current="true" aria-label="Slide ' . ($count + 1) . '"></button>' ?>
+
+      <?php endwhile;
+
+        endif;
+
+        wp_reset_postdata();
+
+        $count++;
+      endforeach;
+
+      ?>
+
+      <div class="carousel-indicators">
+        <?php echo $indicators; ?>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#alecaddd-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#alecaddd-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <div class="row">
+</div>
+
+<div class="row">
 
   <div class="col-xs-12 col-sm-8">
 
@@ -52,7 +80,7 @@
 
         <?php get_template_part('content', get_post_format()); ?>
 
-      <?php endwhile;
+    <?php endwhile;
 
     endif;
 
@@ -102,7 +130,7 @@
   <div class="col-xs-12 col-sm-4">
 
     <?php get_sidebar(); ?>
-    
+
   </div>
 
 </div>
