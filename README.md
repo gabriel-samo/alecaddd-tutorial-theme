@@ -218,4 +218,14 @@ This is a WordPress theme following the tutorial by Alecaddd.
 
 ### [Tutorial](https://www.youtube.com/watch?v=0UzwBRLfsbM)
 
+## Lesson 11:
 
+- Modified the blog posts page to be a single post page.
+- Added ```single.php``` file to the theme.
+  - Added ```get_header()``` function to ```single.php``` to display the header.
+  - Added ```get_footer()``` function to ```single.php``` to display the footer.
+  - Added ```get_sidebar()``` function to ```single.php``` to display the sidebar.
+  - Added ```the_tags()``` function to ```single.php``` to display the tags.
+  - Added ```edit_post_link()``` function to ```single.php``` to display the edit post link only if the user is logged in as an admin.
+
+### [Tutorial](https://www.youtube.com/watch?v=CUefAciz5m8&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
