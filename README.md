@@ -229,3 +229,14 @@ This is a WordPress theme following the tutorial by Alecaddd.
   - Added ```edit_post_link()``` function to ```single.php``` to display the edit post link only if the user is logged in as an admin.
 
 ### [Tutorial](https://www.youtube.com/watch?v=CUefAciz5m8&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)
+
+## Lesson 12:
+
+- Added a search form to the theme in the ```header.php``` file.
+  - Added ```get_search_form()``` function to ```header.php``` to display the search form.
+- Added ```add_theme_support('html5', array('search-form'));``` to ```functions.php``` to add support for HTML5 in the search form.
+- Created a search form in the ```searchform.php``` file to display the search form.
+- Created a search page in the ```search.php``` file to display the search results.
+- Created a ```content-search.php``` file to display the search results.
+
+### [Tutorial](https://www.youtube.com/watch?v=8Hn3k6Zsp9g&list=PLriKzYyLb28nUFbe0Y9d-19uVkOnhYxFE)

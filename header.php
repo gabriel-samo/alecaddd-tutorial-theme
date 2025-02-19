@@ -45,6 +45,11 @@
         </nav>
       
       </div>
+
+      <div class="search-form-container pt-5">
+        <?php get_search_form(); ?>
+      </div>        
+
     </div>
 
   <!-- <img src="<?php  ?>" height="<?php  ?>" width="<?php  ?>" alt="">  -->
